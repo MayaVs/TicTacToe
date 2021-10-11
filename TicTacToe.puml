@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Game{
+    + void play();
+}
+
+abstract class BoardGame implements Game{
+    char[] board;
+    Player player;
+    + boolean hasEnded();
+    + String getWinner();
+    + void play();
+
+}
+
+class TicTacToe extends BoardGame{
+    public TicTacToe();
+
+    int getNextPosition();
+
+}
+
+enum Player{
+    X, O
+    - static Player[] vals;
+    + Player getNext();
+}
+
+@enduml
