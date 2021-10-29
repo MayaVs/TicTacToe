@@ -1,9 +1,12 @@
+package com.tictactoe;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
-public class TicTacToe extends BoardGame{
-    char[] board;
+public class TicTacToe extends BoardGame {
+    protected char[] board;
     Player player;
 
     public TicTacToe(){
@@ -24,7 +27,7 @@ public class TicTacToe extends BoardGame{
 
     @Override
     public boolean isDraw() {
-        return !board.toString().contains(" ");
+        return !Arrays.toString(board).contains(" ");
     }
 
     @Override

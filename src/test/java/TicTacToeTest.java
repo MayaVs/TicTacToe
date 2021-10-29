@@ -1,3 +1,5 @@
+import com.tictactoe.*;
+import helper.TicTacToeSub;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

@@ -1,6 +1,10 @@
+package com.tictactoe;
+
+import com.tictactoe.Player;
+
 import java.io.IOException;
 
-public abstract class BoardGame implements Game{
+public abstract class BoardGame implements Game {
     public char[] board;
     public Player player;
     public abstract boolean isDraw();
