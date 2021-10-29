@@ -3,7 +3,6 @@ package com.tictactoe;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class TicTacToe extends BoardGame {
     protected char[] board;
@@ -27,7 +26,7 @@ public class TicTacToe extends BoardGame {
 
     @Override
     public boolean isDraw() {
-        return !Arrays.toString(board).contains(" ");
+        return !board.toString().contains(" ");
     }
 
     @Override
